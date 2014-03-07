@@ -9,7 +9,7 @@ This is the model for business accounts/users or creators of contests on Rewardi
 Get request shortcut to view all businesses on Rewardify. Probably will remove during production.
 
 Response:
-`
+```
 response = [
   {
     id: int,
@@ -25,7 +25,7 @@ response = [
     ]
   }
 ]
-`
+```
 
 ---
 
