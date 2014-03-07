@@ -9,7 +9,7 @@ This is the model for contests on Rewardify.
 Get request shortcut to view all contests on Rewardify. Probably will remove during production.
 
 Response:
-`
+```
 response = [
   {
     id: int,
@@ -49,7 +49,7 @@ response = [
     ]
   }
 ]
-`
+```
 
 ---
 
@@ -58,7 +58,7 @@ response = [
 Creating a new contest on Rewardify, and upon successful request will return back the contest information.
 
 Request:
-`
+```
 {
   title: string,
   startDate: date,
@@ -92,10 +92,10 @@ Request:
   uniqueContestId: string,
   owner: object
 }
-`
+```
 
 Response:
-`
+```
 response = [
   {
     id: int,
@@ -135,7 +135,7 @@ response = [
     ]
   }
 ]
-`
+```
 
 ---
 
@@ -144,7 +144,7 @@ response = [
 Updating a user's account settings and upon successful request will return back the updated user account information.
 
 Request:
-`
+```
 {
   title: string,
   startDate: date,
@@ -178,10 +178,10 @@ Request:
   uniqueContestId: string,
   owner: object
 }
-`
+```
 
 Response:
-`
+```
 response = [
   {
     id: int,
@@ -221,7 +221,7 @@ response = [
     ]
   }
 ]
-`
+```
 
 ---
 
@@ -232,21 +232,21 @@ If it is a new user that does not have a Rewardify account, we create a new Rewa
 Response for this request would be the participant's userId, email, ranking and score. Ranking can be '???' if the contest has displayLeaderboard as false.
 
 Request:
-`
+```
 {
   userId: int
 }
-`
+```
 
 Response:
-`
+```
 response = {
   userId: int,
   email: string,
   ranking: string,
   score: string
 }
-`
+```
 
 ---
 
@@ -259,15 +259,15 @@ Ranking can be '???' if the contest has displayLeaderboard as false.
 PromotionType would be a string indicating what promotion type the participant just did, and to update the front-end to prevent the user from being able to re-do the same promotion type if applicable.
 
 Request:
-`
+```
 {
   userId: int,
   promotionType: string
 }
-`
+```
 
 Response:
-`
+```
 response = {
   userId: int,
   email: string,
@@ -275,6 +275,6 @@ response = {
   score: string,
   promotionType: string
 }
-`
+```
 
 ---

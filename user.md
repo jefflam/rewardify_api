@@ -9,7 +9,7 @@ This is the model for normal users or participants of contests on Rewardify.
 Get request shortcut to view all users on Rewardify. Probably will remove during production.
 
 Response:
-`
+```
 response = [
   {
     id: int,
@@ -26,7 +26,7 @@ response = [
     ]
   }
 ]
-`
+```
 
 ---
 
@@ -35,7 +35,7 @@ response = [
 Creating a new user on Rewardify, and upon successful request will return back the user account information.
 
 Request:
-`
+```
 {
   name: string,
   email: string,
@@ -46,10 +46,10 @@ Request:
   gender: string, // optional
   facebook": string // optional
 }
-`
+```
 
 Response:
-`
+```
 response = [
   {
     id: int,
@@ -63,7 +63,7 @@ response = [
     facebook: string
   }
 ]
-`
+```
 
 ---
 
@@ -72,7 +72,7 @@ response = [
 Updating a user's account settings and upon successful request will return back the updated user account information.
 
 Request:
-`
+```
 {
   name: string,
   password: string,
@@ -82,10 +82,10 @@ Request:
   gender: string, // optional
   facebook": string // optional
 }
-`
+```
 
 Response:
-`
+```
 response = [
   {
     id: int,
@@ -99,4 +99,4 @@ response = [
     facebook: string
   }
 ]
-`
+```

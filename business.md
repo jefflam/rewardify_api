@@ -34,7 +34,7 @@ response = [
 Creating a new business account on Rewardify, and upon successful request will return back the business account information.
 
 Request:
-`
+```
 {
   name: string,
   email: string,
@@ -45,10 +45,10 @@ Request:
   industry: string, // optional
   photo: string // optional
 }
-`
+```
 
 Response:
-`
+```
 response = [
   {
     id: int,
@@ -61,7 +61,7 @@ response = [
     photo: string
   }
 ]
-`
+```
 
 ---
 
@@ -70,7 +70,7 @@ response = [
 Updating a user's account settings and upon successful request will return back the updated user account information.
 
 Request:
-`
+```
 {
   "name": string,
   "password": string,
@@ -80,10 +80,10 @@ Request:
   "gender": string, // optional
   "facebook": string // optional
 }
-`
+```
 
 Response:
-`
+```
 response = [
   {
     id: int,
@@ -96,7 +96,7 @@ response = [
     "facebook": string
   }
 ]
-`
+```
 
 ---
 
