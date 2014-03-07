@@ -12,6 +12,6 @@ The format is as such
 ## Title of API Action
 ### [TYPE] <API end point>
 #### Description and expected behaviour of API action
-`Expected Response
+`Expected Response`
 
 where TYPE = GET, POST, PUT or DELETE
