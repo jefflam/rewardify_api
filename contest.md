@@ -13,6 +13,7 @@ Response:
 response = [
   {
     id: int,
+    uuid: string,
     title: string,
     startDate: date,
     startTime: time,
@@ -56,6 +57,8 @@ response = [
 ### Create a new contest on Rewardify
 #### [POST] /contest
 Creating a new contest on Rewardify, and upon successful request will return back the contest information.
+We also have to pass in the id of the current user in the owner attribute to associate the contest to the business user that is creating it.
+Before creation, we also create a uuid with node-uuid v4 which will serve as the url for the contest.
 
 Request:
 ```
@@ -90,7 +93,7 @@ Request:
   postContestPageCoverDesignImage: string,
   postContestPageCoverDesignHTML: string,
   uniqueContestId: string,
-  owner: object
+  owner: int
 }
 ```
 
@@ -99,6 +102,7 @@ Response:
 response = [
   {
     id: int,
+    uuid: string,
     title: string,
     startDate: date,
     startTime: time,
@@ -185,6 +189,7 @@ Response:
 response = [
   {
     id: int,
+    uuid: string,
     title: string,
     startDate: date,
     startTime: time,

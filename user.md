@@ -1,6 +1,7 @@
 # User Model
 
-This is the model for normal users or participants of contests on Rewardify.
+This is the model for normal/business users or participants/creators of contests on Rewardify.
+Account type is demarcated by business attribute, which is a boolean.
 
 ---
 
@@ -21,6 +22,7 @@ response = [
     photo: string,
     gender: string,
     facebook: string,
+    business: boolean
     contests: [
       // objects of contest models
     ]
